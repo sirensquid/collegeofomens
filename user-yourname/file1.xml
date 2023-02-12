@@ -7,7 +7,7 @@
 		</update>
 	</info>
 	
-	<element name="Circle of Omens" type="Sub Class" source="GM Binder" id="ID_DRUID_OMENS">
+	<element name="Circle of Omens" type="Archetype" source="GM Binder" id="ID_DRUID_OMENS">
     <supports>Druid Circle</supports>
     <description>
       <p>Witches, sages, seers, and oracles. All of these and more are examples of those gathered in the Circle of Omens: 
@@ -18,8 +18,10 @@
 		<multiclass id="ID_WOTC_PHB_MULTICLASS_druid">
     <prerequisite>Wisdom 13</prerequisite>
     <requirements>([wis:13])</requirements>
+			<select type="Archetype" name="Druid Cirlle" supports="Druid Circle" level="2" />
     <setters>
         <set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+	    <set name="hd">d8</set>
     </setters>
     <rules>
         <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
