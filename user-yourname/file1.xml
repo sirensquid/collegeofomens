@@ -7,6 +7,94 @@
 		</update>
 	</info>
 	
-	<!-- place your elements here -->
+	<element name="Circle of Omens" type="Sub Class" source="GM Binder" id="ID_DRUID_OMENS">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>Witches, sages, seers, and oracles. All of these and more are examples of those gathered in the Circle of Omens: 
+	      a congregation of druids who use their powers to interpret nature's signs and proclaim to all who can hear what they mean. 
+	      They use all manner of tools in their pursuit of divination, from rune-engraved knuckle bones to gem inlaid sticks to even the entrails of slain creatures.</p>
+ 
+    </description>
+		<multiclass id="ID_WOTC_PHB_MULTICLASS_druid">
+    <prerequisite>Wisdom 13</prerequisite>
+    <requirements>([wis:13])</requirements>
+    <setters>
+        <set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+    </setters>
+    <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+        <grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+    </rules>
+</multiclass>
+		
+		<sheet action="Bonus Action" usage="1/Long Rest">
+    <description level="2">Minor Omen
+At 2nd level, you gain the power to dispense minor prophecies. You speak your omens, using a bonus action to impose advantage or disadvantage on the next ability check a creature within 60 feet that can hear you makes within the next minute.
+
+Unwilling creatures can make a Wisdom saving throw against your druid spell save DC to avoid the minor
+omen's effects.
+
+Once you use this feature, you can't do so
+again until finishing a short or long rest</description>
+    <description level="6">A bonus of {{wisdom:modifier}} to healing and damage with spells.</description>
+			<description level="2">Prognosticate
+Also at 2nd level, you learn how to read and
+interpret omens around you, from migratory bird
+movements to leftover ash and embers from last
+night's campfire.
+
+After finishing a long rest, you can read the signs and omens around you, interpreting the will of fate for the
+day. When you do so, roll 1d3. You gain the
+following effects depending on the roll:
+
+Good Omens (1). You and up to 6 other creatures
+of your choice that you know and are on the same plane
+of existence as you can roll 1d3 and add the result to their attack rolls ability checks, and saving throws.
+
+Bad Omens (2). You and up to 6 other creatures
+of your choice that you know and are on the same
+plane of existence as you must roll 1d3 and
+subtract the result to their attack rolls,
+ability checks, and saving throws.
+
+Mixed Omens (3). You and up to 6 other creatures
+of your choice that you know and are on the
+same plane of existence as you must reroll their
+attack rolls, ability checks, and saving throws
+when they roll a 1, 10, or 20 on the d20. Affected
+creatures must use the new roll.
+You can manifest Prognosticate's effects for up to 1 hour, all at once or in shorter bursts. 
+You use an action to activate the effects of your rolled omens, each time using at least 10 minutes from the remaining duration.
+Affected creatures are vaguely aware of the effects of this feature, but are not alerted to its source. 
+Unwilling targets can make a Wisdom saving throw against your druid spell save DC, avoiding the effects of your prognostication on a success.</description>
+			<description level="6">Haruspicy
+Starting at 6th level, you can divine snippets of the future through a practice called haruspicy.
+
+You can cast divination without expending a spell slot and without preparing the spell, provided you use the corpse of a Small or larger creature that has died within the last hour as its material components. When cast this way, this spell doesn't consume the corpse nor does it contact a divine being; instead, you divine the answer to your query by reading the omens in the entrails of said corpse. You cannot use the same corpse for subsequent castings of divination this way.
+
+You can cast this spell this way a number of times equal to your proficiency bonus, and you regain all expended uses after finishing a long rest.</description>
+			<description level="10">Visionary
+At 10th level, your powers of prophecy grow more potent.
+
+Prognosticate now has a maximum duration of 2 hours, instead of 1.
+
+Additionally, you can use Prognosticate as a bonus action. 
+You can do so a number of times equal to your proficiency bonus, regaining expended uses after finishing a long rest.</description>
+			<description level="14">Potent Prophet
+At 14th level, you gain the ability to tap into fate itself, allowing you to dispense favorable and ill omens at your discretion.
+You can cast bane and bless at their lowest level without expending spell slots and without preparing the spells.
+When cast using this feature, targets must add your Wisdom modifier to the result of the d4 roll used by both spells if they are affected by your Prognosticate.
+Additionally, you can choose to expend a use of Wild Shape when casting either spell to forgo maintaining concentration on them.
+				The spell's duration remains the same.</description>
+
+             </sheet>
+    <rules>
+      <stat name="strength" value="2" />      
+    </rules>
+  </element>
 	
 </elements>
